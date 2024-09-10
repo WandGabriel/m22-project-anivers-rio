@@ -1,0 +1,52 @@
+.event {
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+
+        @media(max-width: 768px) {
+            width: 100%;
+            display: block;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+
+            @media (max-width: 1023px) {
+                padding: 16px;
+            }
+
+            @media (max-width: 768px) {
+                padding: 16px;
+                text-align: center;
+                display: block;
+            }
+
+            h2 {
+                font-size: 3em;
+                display: block;
+                width: 100%;
+
+                @media (max-width: 1023px) {
+                    font-size: 2.5em;
+                    padding-bottom: 8px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 25px;
+                }
+            }
+
+            p {
+                padding-bottom: 16px;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container hero">
+        <header class="header">
+            <div class="header__logo">
+                <h1>
+                    <img src="./images/logo.png" alt="Imagem do Logo">
+                </h1>
+                <nav class="header__navbar">
+                    <ul class="header__navbar__list">
+                        <li class="header__navbar__list__item">
+                            <a href="#">Início</a>
+                        </li>
+                        <li class="header__navbar__list__item">
+                            <a href="#">Sobre</a>
+                        </li>
+                        <li class="header__navbar__list__item">
+                            <a href="#">Informações</a>
+                        </li>
+                        <li class="header__navbar__list__item">
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="event">
+            <div class="event__content">
+                <div class="event__content__info">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/aniversario_300x300.jpg">
+                        <source media="(max-width: 1024px)" srcset="./images/aniversario_400x400.jpg">
+                        <img class="event__content__info__img" src="./images/aniversario_500x500.jpg" alt="Imagem de Aniversário">
+                    </picture>
+                </div>
+                <div class="event__content__info">
+                    <h2>
+                        HAPPY
+                        ANNIVERSARY
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto veritatis ullam nostrum. Quos rerum nobis, similique sapiente minus nesciunt ipsam cum perspiciatis tenetur corrupti ut modi explicabo, reprehenderit expedita voluptatibus!
+                    </p>
+                    <p><strong>Data do Evento:</strong> <span id="data-evento"></span> </p>
+                    <p><strong>Contagem Regressiva:</strong><span id="data-evento-contagem-regressiva"></span></p>
+                    <button class="button">Quero Participar</button>
+                </div>                
+            </div>            
+        </section>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
